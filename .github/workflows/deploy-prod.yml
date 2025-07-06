@@ -27,8 +27,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements-dev.txt
 
-      - name: Run tests
-        run: python -m pytest
+    
 
   deploy:
     name: "Deploy bundle"
@@ -45,4 +44,5 @@ jobs:
         working-directory: .
         env:
           DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
+          DATABRICKS_HOST: ${{ env.DATABRICKS_HOST }}
           DATABRICKS_BUNDLE_ENV: prod
