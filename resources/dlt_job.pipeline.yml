@@ -1,0 +1,13 @@
+# The main pipeline for dlt_job
+resources:
+  pipelines:
+    dlt_job_pipeline:
+      name: dlt_job_pipeline
+      catalog: users
+      schema: debadatta_mohapatra
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+
+      configuration:
+        bundle.sourcePath: ${workspace.file_path}/src
