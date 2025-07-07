@@ -4,7 +4,7 @@ resources:
     dlt_job_pipeline:
       name: dlt_job_pipeline
       catalog: debadm
-      schema: debadm_${bundle.target}
+      schema: ${bundle.target}
       libraries:
         - notebook:
             path: ../src/dlt_pipeline.ipynb
