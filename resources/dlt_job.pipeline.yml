@@ -3,8 +3,8 @@ resources:
   pipelines:
     dlt_job_pipeline:
       name: dlt_job_pipeline
-      catalog: users
-      schema: debadatta_mohapatra
+      catalog: debadm
+      schema: debadm_${bundle.target}
       libraries:
         - notebook:
             path: ../src/dlt_pipeline.ipynb

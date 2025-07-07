@@ -17,6 +17,7 @@ targets:
     default: true
     workspace:
       host: https://e2-demo-field-eng.cloud.databricks.com
+  
 
   prod:
     mode: production
