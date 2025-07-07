@@ -34,7 +34,7 @@ jobs:
 
   deploy:
     name: "Deploy bundle"
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs:
       - test_package
 
