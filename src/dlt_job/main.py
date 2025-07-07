@@ -1,6 +1,9 @@
 from pyspark.sql import SparkSession, DataFrame
 
 
+def hello():
+    return "Hello, World!"
+
 def get_taxis(spark: SparkSession) -> DataFrame:
     return spark.read.table("samples.nyctaxi.trips")
 
