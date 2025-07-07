@@ -7,4 +7,4 @@ from dlt_job.main import get_taxis, get_spark,hello
 
 
 def test_hello():
-    assert module.hello() == "Hello, World!"
+    assert hello() == "Hello, World!"
